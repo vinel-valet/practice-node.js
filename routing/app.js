@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
     console.log('Server');
     res.setHeader('Content-type', 'text/html')
     if (req.url === '/') {
-        fs.readFile('./home.html', (err, data) => {
+        fs.readFile('routing/home.html', (err, data) => {
             if (err) {
                 console.log(err);
                 res.end();
