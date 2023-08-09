@@ -2,9 +2,9 @@
   "name": "node-js",
   "version": "1.0.0",
   "description": "",
-  "main": "routing/app.js",
+  "main": "routing/express-server.js",
   "scripts": {
-    "dev": "nodemon routing/app.js"
+    "dev": "nodemon routing/express-server.js"
   },
   "author": "",
   "license": "ISC",
