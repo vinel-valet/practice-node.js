@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<%- include('./partials/head'); %>
+<body>
+    <%- include('./partials/navbar'); %>
+    <div class="container">
+        <form method="post" action="/add">
+            <input type="text" name="name">
+            <button type="submit">Add</button>
+        </form>
+
+        <% if (listName.length) { %>
+            <% listName.forEach(({ name}) => { %>
+                <h1><%= name %></h1>
+            <% }) %>
+        <% } %>
+    </div>
+</body>
+</html>
