@@ -49,5 +49,5 @@ app.post('/add', (req, res) => {
 })
 
 app.use((req, res) => {
-    res.sendFile(createPath('error'))
+    res.render('error-page', {active: 'home'});
 });
