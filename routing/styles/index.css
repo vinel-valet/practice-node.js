@@ -1,3 +1,15 @@
 .navbar {
     border-bottom: 1px solid black;
 }
+
+.container a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+    font-size: 24px;
+    border: 1px solid lightpink;
+    border-radius: 16px;
+    padding-left: 16px;
+    margin-top: 8px;
+}

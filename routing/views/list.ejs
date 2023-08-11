@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <%- include('./partials/head'); %>
 <body>
     <%- include('./partials/navbar'); %>
@@ -10,8 +10,8 @@
         </form>
 
         <% if (listName.length) { %>
-            <% listName.forEach(({ name}) => { %>
-                <h1><%= name %></h1>
+            <% listName.forEach(({ name, id}) => { %>
+                <a href="/user/<%= id %>"><%= name %></a>
             <% }) %>
         <% } %>
     </div>
